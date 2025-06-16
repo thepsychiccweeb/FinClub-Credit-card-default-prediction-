@@ -1,0 +1,36 @@
+{
+    "model_name": "Optimized Logistic Regression",
+    "best_parameters": {
+        "C": 10,
+        "class_weight": "balanced",
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": null,
+        "max_iter": 100,
+        "multi_class": "auto",
+        "n_jobs": null,
+        "penalty": "l2",
+        "random_state": 42,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+    },
+    "performance_metrics": {
+        "Custom Score": 0.603486117822906,
+        "Accuracy": 0.7611881188118812,
+        "Precision": 0.4151599443671766,
+        "Recall": 0.6205821205821206,
+        "F1 Score": 0.4975,
+        "F2 Score": 0.5646992054483541,
+        "ROC AUC": 0.7675959961918866
+    },
+    "preprocessing_steps": [
+        "scaler",
+        "smote",
+        "classifier"
+    ],
+    "best_threshold": 0.0,
+    "threshold_note": "Manually updated to 0.2 for higher recall"
+}

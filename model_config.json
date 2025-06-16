@@ -1,0 +1,31 @@
+{
+    "model_name": "Weighted Score Optimized Neural Network",
+    "best_threshold": 0.3,
+    "class_weights": {
+        "0": 1,
+        "1": 8
+    },
+    "weighted_score_formula": "0.6*F2 + 0.3*F1 + 0.1*Accuracy",
+    "final_weighted_score": 0.506097247873457,
+    "architecture": {
+        "layers": [
+            1024,
+            512,
+            256,
+            128,
+            64,
+            1
+        ],
+        "dropout_rates": [
+            0.45,
+            0.35,
+            0.3,
+            0.25,
+            0.15
+        ],
+        "regularization": 0.003,
+        "optimizer": "Adam",
+        "learning_rate": 0.0007
+    },
+    "threshold_note": "Updated to 0.3 for higher recall"
+}
